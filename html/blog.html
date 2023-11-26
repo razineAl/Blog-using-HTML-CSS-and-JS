@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>le monde en noir &amp; blanc</title>
+        <meta charset="utf-8">
+        <meta name="description" content="le monde en noir est blanc est un site de travail photographique">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/nb.css">
+        <script src="/javascript/simple.js" defer></script>
+        <script src="/javascript/random.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script> 
+        <script src="/javascript/menu.js"></script>
+    </head>
+    <body>
+      <header id="mainHeader">  
+        <img src="/images/adn.svg" alt="cette image represente un logo" id="imag"><h1>Le monde en noir & blanc</h1>
+        <nav id="mainNav">
+          <ul><!--les outils de navigationn de mon site-->
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">à propos</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+         </ul>
+           </nav>
+           <button id="menuToggle"><img src="/images/menu.svg" alt="ouvrir / fermer le menu"></button><!--le bouton menu-->
+    </header><!--ici se termine l'antete du site-->
+      <section id="pageContent" class="twoCols text sp"><!--cette section renferme le contenu du site-->
+     <main id="leftCol"><!--ouverture de la balise main qui contient le contenu de la collone gauche-->
+      <article>
+         <h1>Lorem ipsum dolor sit amet</h1>
+       <p><!--image de paris et debut du 1er paragraphe--><figure class="alignLeft"><img src="/images/unnamed.jpg" alt="photo qui montre paris"></figure><strong>AAAA/MM/DD | razine aliouche | 4 commentaires</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at risus venenatis, ultricies tortor nec, sollicitudin sapien. Fusce aliquam sollicitudin risus, ac laoreet purus bibendum et. Nam laoreet sollicitudin sagittis. Pellentesque in mollis eros. Aliquam tincidunt enim at auctor blandit. Phasellus mi arcu, dictum vulputate rhoncus at, viverra volutpat lectus. Duis in ultricies nisi, eu euismod mi.<br> <a href="singleBlog.html">Lire la suite</a></p>
+      </article> 
+      <article>
+         <h2>Sed eu libero consectetur</h2>
+       <p> <strong>AAAA/MM/DD | razine aliouche | 4 commentaires</strong> <br>Sed eu libero consectetur, dignissim ex nec, accumsan sapien. Vivamus fermentum eu odio et tincidunt. Phasellus eu felis dapibus, cursus nibh vitae, consequat sem. Praesent vestibulum mi eget enim suscipit eleifend. Pellentesque odio nibh, varius et sem nec, consequat maximus ante. Pellentesque turpis odio, suscipit a accumsan a, consectetur et sapien. Fusce lacinia risus lectus. Vivamus blandit lorem in accumsan bibendum. Maecenas a purus diam. Aliquam finibus, felis sed molestie ultricies, augue eros auctor purus, sed fringilla ante sapien vitae leo. Aenean gravida sed lorem a rutrum<br><a href="singleBlog.html">Lire la suite</a></p></article>
+       <article>
+       <h2>Morbi pretium ligula in lectus hendrerit vestibulum</h2>
+       <p><img src="/images/berlin.jpg" alt="photo qui montre berlin">Proin nec elit vitae justo lacinia viverra. Pellentesque vehicula ligula vel dui malesuada, non sollicitudin lorem iaculis. Etiam porta ipsum nec odio congue congue. Ut ullamcorper sollicitudin commodo. Aenean posuere sapien est, quis tempus elit ultricies sed. Phasellus consectetur suscipit euismod. Cras accumsan urna sit amet fermentum elementum. Aliquam et efficitur diam. Vivamus et tortor sit amet tortor auctor luctus sit amet non augue. Curabitur sit amet lectus et purus scelerisque dignissim. Quisque id elit vitae dolor vehicula vehicula. Duis auctor nulla metus, nec blandit lacus venenatis in<br><a href="singleBlog.html">Lire la suite</a></p></article>
+      <article>  
+       <h2>Vestibulum feugiat imperdiet fringilla</h2> 
+       <p><strong>AAAA/MM/DD | razine aliouche | 4 commentaires</strong> <br>Morbi pretium ligula in lectus hendrerit vestibulum. Mauris condimentum nibh sed urna vulputate, vel semper justo rhoncus. Sed blandit luctus lorem, id semper purus pulvinar at. Nullam fermentum luctus ante, eu blandit massa pretium at. Aenean dictum felis sit amet enim ornare, sit amet accumsan odio malesuada. Duis malesuada quam sed sem vestibulum, non pellentesque felis imperdiet. In hac habitasse platea dictumst. Morbi tristique volutpat tortor, mattis mollis nunc. Mauris quis maximus tellus, id lacinia lectus. Maecenas tristique ultrices ex, a varius est dignissim sit amet. Nullam molestie ac elit eget suscipit. Pellentesque dictum sem ultrices pharetra placerat<br><a href="singleBlog.html">Lire la suite</a></p>
+      </article>      
+     </main><!--fermeture de la balise main-->
+       <aside id="rightCol">
+         <section>
+           <h1><label for="search">rechercher</label></h1>
+           <input type="search" id="search" name="search">
+         </section>
+         <section>
+           <h1>categories</h1>
+           <ul>
+             <li><a href="#">Matériel <span>11</span></a></li>
+             <li><a href="#">LightRoom <span>2</span></a></li>
+             <li><a href="#">techniques <span>9</span></a></li>
+             <li><a href="#">voyages <span>17</span></a></li>
+           </ul>
+         </section>
+         <section>
+           <h1>archives</h1>
+           <div>
+            <h2><a href="#">2018</a></h2>
+            <ul>
+              <li><a href="#">janvier 2018 <span>8</span></a></li>
+              <li><a href="#">fevrier 2018 <span>6</span></a></li>
+              <li><a href="#">avril 2018 <span>2</span></a></li>
+              <li><a href="#">mai 2018 <span>4</span></a></li>
+              <li><a href="#">juin 2018 <span>5</span></a></li>
+              <li><a href="#">septembre 2018 <span>1</span></a></li>
+              <li><a href="#">decembre 2018 <span>2</span></a></li>
+            </ul>
+           </div>
+           <div>
+             <h2><a href="#">2019</a></h2>
+             <ul>
+              <li><a href="#">janvier 2019 <span>7</span></a></li>
+              <li><a href="#">avril 2019 <span>2</span></a></li>
+              <li><a href="#">mai 2019 <span>4</span></a></li>
+              <li><a href="#">juin 2019 <span>5</span></a></li>
+              <li><a href="#">juillet 2019 <span>1</span></a></li>
+              <li><a href="#">aout 2019 <span>2</span></a></li>
+            </ul>
+           </div>
+         </section>
+       </aside>
+       </section><!--fermeture de la balise qui contient le contenu de la page blog-->
+     <footer id="mainFooter"><!--ici commence le pied de page du site-->
+         <p>&copy; copyright razine aliouche - 2021</p>
+     </footer>  <!--ici se termine le pied de page du site-->
+
+
+    </body>
+
+</html>

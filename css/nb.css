@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root{
+    --mblue:#18435c;
+    --mgray:#0c180f;
+    --mwhite:rgba(255, 255, 255, 0.637);
+}
+body{
+    font-family: Raleway,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    text-align-last: left;
+}
+.Accessibility{
+    position: absolute;
+    right: -1500000px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#pageContent h1{
+    color: rgb(105, 26, 30);
+}
+ul{
+    color: aqua;
+}
+#mainNav{
+    background-color: #123346;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    padding-bottom: 10px;
+    display: none;
+}
+#pageContent.accueil div{
+    height: 125px;
+    width: 115px;
+    font-size: .7em;
+    background-color: rgba(184, 179, 179, 0.788);
+    position: relative;
+    top: 200px;
+    left: 150px;
+    padding: 20px;
+}
+#mainNav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 90px;
+}
+#mainNav a:hover{
+    color: rgba(255, 255, 255, 0.63);
+}
+#mainNav a:active{
+    color: rgb(12, 54, 54);
+}
+#mainHeader {
+    background-color: rgb(12, 54, 54);
+    height:40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0px 5px;
+    display: grid;
+    grid-template-columns: 80px 1fr 70px;
+}
+#mainFooter{
+    background-color: rgb(12, 54, 54);
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leftCol{
+    line-height: 1.5;
+}
+#pageContent.text #leftCol p>img{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+#pageContent.titre h1{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+#pageContent.titre p{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+#pageContent.titre img {
+    width: 550px;
+}
+#pageContent.gal ul{
+list-style: none;
+margin: 0;
+padding: 0;
+margin:20px;
+}
+#pageContent.gal #listGlr li img{
+    width: 90%;
+}
+#pageContent.gal #listGlr li{
+    margin: 35px;
+}
+#pageContent.gal #listGlr li , #pageContent.gal #listGalr li{
+    width: 200px;
+    height: 150px;
+    background-color: rgba(216, 198, 198, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pageContent.galerie #listGalr{
+    display: flex;
+    flex-direction: row;
+}
+#pageContent.galerie #listGalr li{
+    margin: 0 200px;
+}
+#pageContent.galerie #listGalr li img{
+    width: 90px;
+}
+#pageContent.gal #listGlr li:hover , #pageContent.gal #listGalr li:hover{
+    background-color: rgba(196, 189, 133, 0.363);
+    cursor: pointer;
+}
+#imageContainer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s, visibility 0.8s;
+}
+#pageContent.about{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+#pageContent.merci div{
+    margin: 100px 30px;
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 5px;
+}
+#pageContent.merci div p{
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+.invalid{
+    border-color: rgb(202, 19, 19);
+}
+#pageContent.merci div h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+}
+#pageContent.about div{
+    background-color: rgba(219, 210, 210, 0.589);
+    padding: 20px;
+    margin: 20px 0px;
+}
+#mainNav ul li ul{
+    background-color: #123346;
+    position: absolute;
+    width: auto;
+    height: 140px;
+    top: 40px;
+    display: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+#mainNav ul li ul li {
+    margin: 0;
+    padding-bottom: 10px;
+}
+#mainNav ul li ul li a{
+    color: aqua;
+}
+#pageContent.about div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#imageContainer.visible img {
+    border: solid 5px white;
+}
+#imageContainer.visible{
+    opacity: 1;
+    visibility:visible;
+}
+section.single div{
+    margin-top: 50px;
+    background-color: rgba(214, 200, 200, 0.548);
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pageContent.single div h1{
+    color: rgb(19, 32, 54);
+}
+#pageContent:has(#singleGallery) li:has(img){
+    height: 180px;
+    border: solid 5px white;
+}
+section.single {
+    padding: 20px;
+}
+section.dis{
+    margin-top: 70px;
+    font-size: .9em;
+    border-top: solid 0.5px rgb(12, 54, 54);
+}
+#pageContent.gal #listGlr{
+    display: flex;
+    flex-direction: row;
+}
+#mainFooter #txtSize button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+#mainFooter.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#mainFooter #txtSize button.active{
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 2px;
+}
+#mainFooter #txtSize button:hover{
+    cursor: pointer;
+}
+header > h1{
+    font-family: Cantarell, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0px;
+}
+#pageContent.contact h1{
+    padding-top: 30px;
+    color: rgb(182, 42, 42);
+}
+#pageContent.contact p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #831a1a;
+}
+#pageContent.contact{
+    padding: 30px 20px;
+}
+#pageContent.gal {
+    padding-top: 30px;
+}
+#pageContent.twoCols {
+    padding-top: 30px;
+}
+#leftCol h1{
+    letter-spacing: .1em;
+}
+section h1{
+    font-size: 2.4em;
+}
+#pageContent.text #leftCol a{
+    color: black;
+}
+#pageContent.text #leftCol a:nth-child(even):hover{
+    color: #ffffffa4;
+}
+#pageContent.text #leftCol a:nth-child(odd):hover{
+    color: #151e70a4;
+}
+p{
+    color: var(--mgray);
+}
+#pageContent.text .alignLeft{
+    float: left;
+}
+#imag{
+    width: 40px;
+    position: relative;
+    z-index: 1000;
+}
+#leftCol{
+    padding: 10px;
+}
+#mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family:Cantarell,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+dl.text{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+div.text textarea , div.text input{
+    background-color: #ffffff;
+    border: none;
+    height: 20px;
+}
+dt{
+    text-transform: uppercase;
+}
+#pageContent form label{
+    font-family:Cantarell,Verdana, Geneva, Tahoma, sans-serif;
+}
+#pageContent form > div{
+    display: grid;
+    grid-gap: 20px;
+}
+#pageContent form > div div{
+    display: flex;
+    flex-direction: column;
+}
+#pageContent form{
+    display: grid;
+}
+div.text{
+    display: block;
+    padding-bottom:50px;
+}
+#log{
+    padding: 150px 20px;
+}
+#listGlr{
+    display: grid;
+    grid-gap: 20px;
+}
+#pageContent{
+    background-color: rgba(255, 255, 255, 0.685);
+    min-height: 100vh;
+    max-width: 100vw;
+    background:center center / cover no-repeat fixed;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+textarea.contact{
+    resize: none;
+}
+#menuToggle{
+background-color: transparent;
+width: 50px;
+height: 50px;
+border: none;
+}
+#menuToggle:active{
+border-color: transparent;
+}
+#rightCol{
+    background-color: rgb(21, 76, 128);
+    padding: 20px;
+}
+#rightCol h1{
+color: white;
+}
+ul{
+    list-style: none;
+}
+#pageContent.sp span{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(33, 99, 92);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+sup{
+    color: #18435c;
+}
+#rightCol > section{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+#pageContent.twoCols{
+display: grid;
+grid-gap: 20px;
+}
+#pageContact.contact h1{
+    text-align: center;
+}
+#pageContent form textarea{
+    resize: none;
+    height: 150px;
+}
+
+button{
+    font-weight: bolder;
+    letter-spacing: 0.06em;
+}
+#rightCol a{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+#rightCol a:hover{
+    color: #0c180f;
+}
+#pageContent.contact button{
+    background-color: #c21111;
+    color: #ffdcdc;
+    text-align: center;
+    border: none;
+    height: 30px;
+}
+article{
+    padding: 5px;
+}
+#leftCol p a{
+    color: #9b0027;
+}
+#pageContent.contact button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pageContent.contact button:hover{
+    background-color: #c21111d7;
+    cursor: pointer;
+
+}
+#pageContent.text article:nth-child(odd){
+    background-color: #ffffffa4;
+}
+#pageContent.text article:nth-child(even){
+    background-color: #151e70a4;
+}
+@media screen and (min-width: 768px){
+    #menuToggle{
+        display: none;
+    }
+    #mainHeader{
+        grid-template-columns: 80px 250px 1fr;
+    }
+    #mainNav{
+        position: static;
+        background-color: transparent;
+        display: block;
+        height: auto;
+    }
+    #mainNav a{
+        font-size: 0.6em;
+        padding: 0 10px;
+    }
+    #mainNav ul{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+    }
+    #pageContent.accueil div{
+        height: 180px;
+        width: 170px;
+        font-size: .8em;
+        top: 280px;
+        left: 500px;
+    }
+}
+@media screen and (min-width: 1024px){
+    #mainHeader{
+        grid-template-columns: 80px 1fr 1fr;
+    }
+    #mainHeader > h1 {
+        font-size: 1.3em;
+    }
+    #pageContent{
+        grid-template-columns: 2fr 1fr;
+    }
+    #pageContent form{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #pageContent form button{
+        grid-column: span 2;
+    }
+    #mainFooter{
+        height: 40px;
+    }
+    #mainNav a{
+        font-size: 0.7em;
+    }
+    #pageContent.accueil div{
+        height: 200px;
+        width: 190px;
+        font-size: .9em;
+        top: 260px;
+        left: 750px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #mainHeader{
+        grid-template-columns: 80px 2fr 3fr;
+    }
+    #pageContent{
+        grid-template-columns: 3fr 1fr;
+    }
+    #mainNav a{
+        font-size: 0.8em;
+    }
+    #pageContent.accueil div{
+        height: 270px;
+        width: 250px;
+        font-size: 1em;
+        top: 260px;
+        left: 950px;
+    }
+}
